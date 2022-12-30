@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar-brand {
+    margin-left: 100px;
+}
+
+.navbar-color {
+    background-color: #764AF1;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-nav>a {
+    color: whitesmoke !important;
+    margin-right: 20px;
+}
+
+.navbar-nav button {
+    border: none
+}
+
+.navbar-nav button:hover {
+    background-color: rgb(214, 214, 214) !important;
+}

@@ -1,0 +1,68 @@
+.cards-carousel-home {
+    padding: 8%;
+    background-color: #F0B365;
+}
+
+.card-home {
+    background-color: rgb(245, 243, 243);
+    border-radius: 40px;
+    width: 70% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.card-img-top {
+    padding: 20% 20% 2% 20%;
+    width: 160px !important;
+}
+
+.card-body {
+    height: 270px;
+}
+
+.card-title {
+    font-size: 0.9999rem;
+    color: #434343
+}
+
+.card-text {
+    color: #606060;
+    line-height: 1.2;
+}
+
+.card-text,
+.card-title, 
+.go-somewhere-home {
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+.go-somewhere-home {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+    top: 50px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important;
+}
+
+
+
+@media (max-width: 768px) {
+    .slick-dots li button:before {
+        top: 10px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .slick-dots li button:before {
+        top: 10px !important;
+    }
+}
