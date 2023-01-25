@@ -1,0 +1,145 @@
+.courses-wrapper {
+    background-color: #836CB1;
+}
+
+.courses-heading-search {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 17%;
+}
+
+.heading-courses h1 {
+    color: #fff;
+}
+
+.heading-courses p {
+    color: rgb(220, 219, 219);
+    opacity: 0.9;
+}
+
+.search-container {
+    position: relative;
+}
+  
+  .search-container input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid grey;
+    background-color: #CFB8FD;
+    width: 500px;
+    position: relative;
+    left: 25%;
+  }
+  
+  .search-container button {
+    position: absolute;
+    top: 8px;
+    right: -23%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+
+.courses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 4%;
+}
+  
+.courses-container .card-course {
+    margin: 3%;
+    border-radius: 25px;
+}
+
+.courses-container .card-course{
+    max-width: 100% ;
+}
+
+
+
+.card-img-course:hover {
+    border: 12px solid #FCA12A;
+    border-radius: 25px;
+    transition: all 0.4s linear !important;
+    cursor: pointer;
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+.card-img-top {
+    border-radius: 5%;
+}
+
+.top-right {
+    position: relative;
+    top: 28px;
+    left: 166px;
+    z-index: 1000;
+}
+
+.card-course button {
+    position: relative;
+    top: 7.375rem;
+    left: -9.125rem;
+}
+
+.className {
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) {    
+    .courses-container {
+        padding-bottom: 15%;
+    }
+
+    .courses-heading-search {
+        flex-direction: column;
+    }
+
+    .courses-heading-search {
+        padding-top: 8%;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .search-container input[type=text] {
+        width: 100px !important;
+        left: 0 !important;
+        width: 250px !important;
+    }   
+      
+      .search-container button {
+        right: 1%;
+        border: none;
+      }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .search-container input[type=text] {
+        width: 400px !important;
+    }
+}
+
+
+@media (min-width: 2520px) {
+    .courses-heading-search {
+        left: 32%;
+    }
+}

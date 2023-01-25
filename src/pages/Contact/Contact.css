@@ -1,0 +1,73 @@
+.contact-wrapper {
+    padding: 7%;
+    background-color: #A998C9;
+    gap: 10%;
+}
+
+.contact-text {
+    color: white;
+    align-self: flex-start;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    width: 400px;
+}
+
+input {
+  height: 40px;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 14px;
+}
+
+textarea {
+  height: 80px;
+  border-radius: 14px;
+}
+
+label {
+    color: white;
+    margin-bottom: 3%;
+}
+
+
+
+@media (max-width: 768px) {
+    input, textarea {
+        width: 100%;
+    }
+
+    .contact-text {
+        margin: 5% auto 18% auto;
+    }
+
+    .field {
+        background-color: transparent;
+        border: 1px solid whitesmoke;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    input, textarea {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 2520px) {
+    .contact-text {
+        margin-left: 20%;
+    }
+}

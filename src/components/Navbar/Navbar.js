@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Navbar.css'
 import EduverseLogo from '../../assets/Eduvers-logo.svg'
+import LoginLogo from '../../assets/scorehub-login.png'
+import ShowPassword from '../ShowPassword/ShowPassword';
+
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () => {
+      setIsOpen(!isOpen);
+    }
+  
   return (
     <>
     <div>
@@ -22,7 +31,29 @@ function Navbar() {
                 <a className="nav-link navbar-light" href="/contact-us">CONTACT US</a>
                 <div>
                 </div>
-                <button className="rounded-1 bg-white login-red px-4">LOGIN</button>
+
+                  {isOpen && <div className="overlay"></div>}
+                  <button onClick={togglePopup} className="rounded-1 bg-white login-red px-4">LOGIN</button>
+                  {isOpen && (
+                      <div className="popup-card">
+                        <div>
+                          <img src={LoginLogo} className='login-logo' alt="login panel" />
+                        </div>
+                          <form action="" className='login-form'>
+                            <h5>Login to your account</h5>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" className="login-email" />
+                            <label htmlFor="password">Password</label>
+                            <ShowPassword /><br />
+                            <p id="forget-pass"><a href="/forget-password">Forget Password?</a></p>
+                            <input type="submit" value="LOGIN" onClick={togglePopup} className="btn btn-dark login-btn" />
+                          </form>
+                          <div className='dont-have-account'>
+                            <p>Don’t have an account? <a href="/sign-up">Sign up</a></p>
+                          </div>
+                        </div>
+                     )}
+                  
               </div>
             </div>
           </div>

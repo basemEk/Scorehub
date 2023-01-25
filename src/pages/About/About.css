@@ -1,0 +1,82 @@
+.container-about {
+    background-color: #7DB95C;
+    color: white;
+}
+
+.about-page p {
+    opacity: 0.7;
+}
+
+.kidsStudying,
+.kidsPlaying,
+.girlStudying {
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    /* transition: transform 0.25s ease-in-out; */
+}
+
+.kidsStudying:hover,
+.kidsPlaying:hover,
+.girlStudying:hover {
+    transform: skew(3deg, 2deg);
+}
+
+.container-vr-about {
+    background-color: #9F89EF;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-vr-about>div {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.learn-more-about {
+    color: white;
+    position: relative;
+    left: 10%;
+    width: 42%;
+}
+
+#vr-kid {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-us p, .vision, .mission {
+        margin-bottom: 15% !important;
+    }
+
+    .learn-more-about h1, .learn-more-about p {
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .learn-more-about h1 {
+        margin-bottom: 3%
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about-page {
+        text-align: center;
+    }
+
+    .about-us p, .vision p, .mission p, .values {
+        margin: auto 10% !important
+    }
+
+    .about-us {
+        margin-bottom: 15%;
+    }
+}

@@ -1,0 +1,45 @@
+.course-details-wrapper {
+    background-color: #A998C9;
+    color: #fff;
+    padding-top: 7%;
+}
+
+.bg-color-course-details {
+    background-color: #A998C9;
+}
+
+.back-to-courses {
+    margin-bottom: 5%;
+}
+
+.back-to-courses a {
+    display: flex;
+    align-items: center;
+}
+
+.back-to-courses a h3 {
+    color: white;
+}
+
+.back-to-courses a h3:hover {
+    color: rgb(232, 230, 230);
+}
+
+.left-flasher {
+    color: #fff;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pic {
+    width: 100%;
+    border-radius: 20px !important;
+    background-size: cover;
+}
+
+.cta-course-details {
+    gap: 5%;
+}

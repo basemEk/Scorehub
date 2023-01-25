@@ -3,13 +3,22 @@
     background-color: #F0B365;
 }
 
-.card-home {
-    background-color: rgb(245, 243, 243);
-    border-radius: 40px;
-    width: 70% !important;
-    display: block !important;
-    margin: 0 auto !important;
-}
+
+ .card-home {
+     background-color: white;
+     border-radius: 40px;
+     width: 70% !important;
+     display: block !important;
+     margin: 12% auto !important;
+     position: relative;
+     transform: scale(1);
+     transition: transform 0.5s ease;
+  }
+  
+  .card-home:hover { 
+    transform: scale(1.2);
+  }
+  
 
 .card-img-top {
     padding: 20% 20% 2% 20%;
@@ -51,6 +60,15 @@
 .slick-dots li.slick-active button:before {
     color: white !important;
 }
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,85 @@
+.kids-code-video iframe {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-timeline {
+    margin-left: 5%;
+}
+
+
+/* PAGINATION SLIDER */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 76% !important;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    color: blue
+}
+
+.swiper-pagination-bullet {
+    opacity: 100% !important;
+}
+
+/* .swiper-pagination-bullet-active:nth-child(1) {
+    background-image: url('../../assets/oneBold.png');
+    transition: all 0.5s ease-in-out;
+    width: 20px;
+}
+
+.swiper-pagination-bullet:nth-child(1) {
+    background-image: url('../../assets/one.png');
+    width: 20px;
+}
+
+.swiper-pagination-bullet-active:nth-child(2) {
+    background-image: url('../../assets/twoBold.png');
+    width: 20px;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+    background-image: url('../../assets/two.png');
+    width: 20px;
+}
+
+.swiper-pagination-bullet-active:nth-child(3) {
+    background-image: url('../../assets/threeBold.png');
+    width: 20px;
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+    background-image: url('../../assets/three.png');
+    width: 20px;
+} */
+
+
+
+
+@media (max-width: 768px) {
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 2%;
+    bottom: 100% !important;
+    left: 22% !important;
+    width: 100%;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 40px;
+    height: 40px;
+}
+
+}

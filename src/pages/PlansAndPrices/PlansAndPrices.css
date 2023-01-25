@@ -1,0 +1,281 @@
+.plans-wrapper {
+    background-color: #A998C9;
+}
+
+.plans-heading {
+    color: white;
+    padding-top: 5%;
+}
+
+.plan-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 6%  !important;
+}
+
+.plan-card {
+    padding: 5%;
+    width: 300px;
+    transform: skewY(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+    transform: skewY(5deg);
+}
+
+/* .skewed {
+    transform: skew(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skewed:hover {
+    transform: skew(15deg);
+  } */
+
+.plan-1 {
+    background-color: #7C00F8;
+    border-radius: 10%;
+    height: 432px;
+}
+
+.plan-2 {
+    background-color: #FCA12A;
+    border-radius: 10%;
+}
+
+.plan-3 {
+    background-color: #8FB437;
+    border-radius: 10%;
+}
+
+.plan-circle {
+    color: white;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -32% auto 32% auto;
+}
+
+.plan-circle > p {
+    margin-bottom: 0 !important;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.plan-circle-one {
+    background-color: #333333;
+}
+
+.plan-circle-two {
+    background-color: #8FB437;
+}
+
+.plan-circle-three {
+    background-color: #FCA12A;
+}
+
+.plan-text {
+    margin: 10% auto;
+    text-align: center;
+    width: 100%;
+}
+
+.plan-text > h5 {
+    color: white;
+}
+
+.plan-text > p {
+    color: rgb(236, 233, 233);
+    opacity: 0.8;
+}
+
+.plan-btn {
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.p1-btn {
+    margin-top: 25%;
+}
+
+
+
+@media (max-width: 805px) {
+    .plan-wrapper {
+        flex-direction: column !important;
+        padding-bottom: 6%  !important;
+    }
+
+    .plan-card {
+        margin-top: 10%;
+        padding: 10% !important;
+        width: 0%!important;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .plans-heading {
+        padding-top: 5%;
+    }
+
+    .plan-wrapper {
+        flex-direction: column;
+        padding: 6%  !important;
+    }
+
+    .plan-text {
+        margin: -15% auto 10% auto;
+        text-align: center;
+        width: 70%;
+        position: relative;
+        bottom: 15% !important;
+        top: 0;
+    }
+
+    .plan-card {
+        margin-top: 10%;
+        padding: auto !important;
+        width: 330.2px !important;
+    }
+
+    .plan-1 {
+        width: 330.2px !important;
+    }
+
+    .plan-circle {
+        margin-top: 10%;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .plan-card {
+        margin-top: 10%;
+        padding: auto !important;
+        width: 330.2px !important;
+    }
+}
+
+
+@media (min-width: 2520px) {
+    .plan-wrapper {
+        flex-direction: row;
+        padding: 5%  !important;
+    }
+
+    .plan-card {
+        margin-top: 2%;
+        padding: 1% !important;
+        width: 10% !important;
+    }
+
+    .plan-1 {
+        height: auto !important;
+    }
+
+    .plan-circle {
+        margin-top: 10%;
+    }
+}
+
+
+/* CARDS - PLANS */
+
+/* .plans-section {
+    padding-bottom: 10%;
+}
+
+.plans-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.card-plans {
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+    height: 400px;
+}
+
+.circle-plan {
+    display: flex;
+    color: white;
+    width: 40%;
+    height: 30%;
+    position: relative;
+    top: 5%;
+    border-radius: 50%;
+}
+
+.cards-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute !important;
+    top: 60%;
+    color: white
+}
+
+.cards-contents > button {
+    margin-top: 5%;
+}
+
+.cards-contents > p {
+    width: 40%;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#card-text {
+    padding: auto 15% !important;
+}
+
+.plan-btn {
+    display: block;
+}
+
+.circle-plan > p {
+    align-self: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.free-plan-1 {
+    background-color: #333333;
+}
+
+.free-plan-2 {
+    background-color: #8FB437;
+}
+
+.free-plan-3 {
+    background-color: #FCA12A;
+}
+
+
+.plan-1 {
+    background-color: #7C00F8;
+}
+
+.plan-2 {
+    background-color: #FCA12A;
+}
+
+.plan-3 {
+    background-color: #8FB437;
+} */

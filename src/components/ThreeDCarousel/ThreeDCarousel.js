@@ -12,7 +12,7 @@ import skills from '../../assets/skills.png'
 export default function ThreeDCarousel() {  
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -52,11 +52,12 @@ export default function ThreeDCarousel() {
       }
     ]
   };
+
   return (
-    <div className='cards-carousel-home'>
+    <div className='cards-carousel-home' id="courses-carousel">
       <Slider {...settings}>
       <div className="card-home">
-        <img src={reading} className="card-img-top" alt="..." />
+        <img src={reading} className="card-img-top" alt="entrepreneurship course" />
         <div className="card-body">
           <h5 className="card-title">ENTREPRENEURSHIP</h5>
           <p className="card-text">There are several sections available In different versions, but most of them Have fune</p>
@@ -65,7 +66,7 @@ export default function ThreeDCarousel() {
       </div>
 
       <div className="card-home">
-        <img src={skills} className="card-img-top" alt="..." />
+        <img src={skills} className="card-img-top" alt="mindhub course" />
         <div className="card-body">
           <h5 className="card-title">MINDHUB</h5>
           <p className="card-text">There are several sections available In different versions, but most of them Have fune</p>
@@ -74,7 +75,7 @@ export default function ThreeDCarousel() {
       </div>
 
       <div className="card-home">
-        <img src={arabic} className="card-img-top" alt="..." />
+        <img src={arabic} className="card-img-top" alt="arabic course" />
         <div className="card-body">
           <h5 className="card-title">ARABIC</h5>
           <p className="card-text">There are several sections available In different versions, but most of them Have fune</p>
@@ -83,7 +84,7 @@ export default function ThreeDCarousel() {
       </div>
 
       <div className="card-home">
-        <img src={english} className="card-img-top" alt="..." />
+        <img src={english} className="card-img-top" alt="english course" />
         <div className="card-body">
           <h5 className="card-title">ENGLISH</h5>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

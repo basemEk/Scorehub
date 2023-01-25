@@ -1,0 +1,51 @@
+.founders-wrapper {
+    background-color: #8FB437;
+    display: flex;
+    padding: 7%;
+    gap: 10%;
+}
+
+.founders-pic {
+    width: 519px;
+    height: 533px;
+    border: 15px solid #BDD389;
+    border-radius: 15%;
+}
+
+.founders-txt > h1 {
+    transform: uppercase;
+    color: white;
+}
+
+.founders-txt > p {
+    color: rgb(235, 234, 234);
+    opacity: 0.9
+}
+
+.founders-txt > h1,
+.founders-txt > p {
+    margin-bottom: 6%;
+}
+
+.f-social-icon {
+    width: 31px;
+    margin-right: 1%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .founders-wrapper {
+        flex-direction: column;
+    }
+
+    .founders-pic {
+        width: 100%;
+        height: 100%;
+    }
+
+    .founders-social {
+        margin: 5% auto 15% auto
+    }
+}
