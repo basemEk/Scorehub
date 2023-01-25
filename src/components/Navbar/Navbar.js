@@ -3,6 +3,8 @@ import './Navbar.css'
 import EduverseLogo from '../../assets/Eduvers-logo.svg'
 import LoginLogo from '../../assets/scorehub-login.png'
 import ShowPassword from '../ShowPassword/ShowPassword';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
@@ -11,6 +13,11 @@ function Navbar() {
     const togglePopup = () => {
       setIsOpen(!isOpen);
     }
+
+    const closeLogin = () => {
+      setIsOpen(false);
+    };
+    
   
   return (
     <>
@@ -35,7 +42,8 @@ function Navbar() {
                   {isOpen && <div className="overlay"></div>}
                   <button onClick={togglePopup} className="rounded-1 bg-white login-red px-4">LOGIN</button>
                   {isOpen && (
-                      <div className="popup-card">
+                    <div className="popup-card">
+                      <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={closeLogin} />
                         <div>
                           <img src={LoginLogo} className='login-logo' alt="login panel" />
                         </div>
@@ -46,12 +54,12 @@ function Navbar() {
                             <label htmlFor="password">Password</label>
                             <ShowPassword /><br />
                             <p id="forget-pass"><a href="/forget-password">Forget Password?</a></p>
-                            <input type="submit" value="LOGIN" onClick={togglePopup} className="btn btn-dark login-btn" />
+                            <input type="submit" value="LOGIN" className="btn btn-dark login-btn" />
                           </form>
                           <div className='dont-have-account'>
                             <p>Don’t have an account? <a href="/sign-up">Sign up</a></p>
                           </div>
-                        </div>
+                    </div>
                      )}
                   
               </div>
