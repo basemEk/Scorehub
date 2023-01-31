@@ -19,6 +19,8 @@ import slideOneImage from '../../assets/image1-slider.png';
 import slideTwoImage from '../../assets/image2-slider.png';
 import slideThreeImage from '../../assets/image3-slider.png';
 import bannerVr from '../../assets/vr-kid.png';
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 
 export default function Home() {
@@ -68,7 +70,9 @@ export default function Home() {
 
   return (
     <>
-    <div>
+      <Chatbot cbot={cbot}/>
+
+      <div>
         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner homeBanner">
             <div className="carousel-item active first-slide-container">
@@ -79,7 +83,7 @@ export default function Home() {
                         <div class="container">
                           <div className="video-backg">
                             <p className="lead">WATCH VIDEO</p>
-                            <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+                            <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" alt='play button' />
                           </div>
                           <div class="col"><button type="button" class="btn btn-light btn-lg">BOOK NOW</button></div>
                           <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -108,7 +112,7 @@ export default function Home() {
                         <div class="container">
                           <div className="video-backg">
                             <p className="lead">WATCH VIDEO</p>
-                            <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal-2" />
+                            <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal-2" alt='play button' />
                           </div>
                           <div class="col"><button type="button" class="btn btn-light btn-lg">BOOK NOW</button></div>
                           <div className="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2"
@@ -143,45 +147,52 @@ export default function Home() {
               </p>
            </div>
 
-           <div className="speeches">
-           
-              <div className="speech-3">
+           <div className="speeches"> 
+              <div className="speech-3 speech-wrapper-medium">
                 <img src={person} className="personImgHome" width="50px" height="50px" alt="" />
+                <span className='speech-text-medium'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechMd} alt="" />
               </div>
 
-              <div className="speech-4">
+              <div className="speech-4 speech-wrapper-medium">
                 <img src={person2} className="personImgHome" width="50px" height="50px" alt="" />
+                <span className='speech-text-medium'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechMd} alt="" />
               </div>
 
-              <div className="speech-5">
+              <div className="speech-5 speech-wrapper-small">
                 <img src={person3} className="personImgHome" width="30px" height="30px" alt="" />
+                <span className='speech-text-small'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechSm} alt="" />
               </div>
 
-              <div className="speech-6">
+              <div className="speech-6 speech-wrapper-large">
                 <img src={person4} className="personImgHome" width="70px" height="70px" alt="" />
+                <span className='speech-text-large'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechLg} alt="" />
               </div>
 
-              <div className="speech-7">
+              <div className="speech-7 speech-wrapper-medium">
                 <img src={person5} className="personImgHome" width="50px" height="50px" alt="" />
+                <span className='speech-text-medium'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechMd} alt="" />
               </div>
 
-              <div className="speech-8">
+              <div className="speech-8 speech-wrapper-large">
                 <img src={person} className="personImgHome" width="70px" height="70px" alt="" />
+                <span className='speech-text-large'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechLg} alt="" />
               </div>
 
-              <div className="speech-9">
+              <div className="speech-9 speech-wrapper-small">
                 <img src={person2} className="personImgHome" width="30px" height="30px" alt="" />
+                <span className='speech-text-small'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechSm} alt="" />
               </div>
 
-              <div className="speech-10">
+              <div className="speech-10 speech-wrapper-small">
                 <img src={person3} className="personImgHome" width="30px" height="30px" alt="" />
+                <span className='speech-text-small'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
                 <img src={speechSm} alt="" />
               </div>
             </div>
@@ -193,32 +204,38 @@ export default function Home() {
             {/* SPEECHES ON RESPONSIVE VIEW */}
             <div className="speeches-mobile">   
               <div class="column-speech-mob">
-               <div className="speech-11">
-                <img src={person} className="personImgHome-2 speech-mob-sm" width="30px" height="30px" alt="" />
-                <img src={speechSm} alt="" />
+               <div className="speech-11 speech-container-small">
+                  <img src={person} className="personImgHome-2 speech-mob-sm" width="30px" height="30px" alt="" />
+                  <img src={speechSm} alt=""/>
+                  <span className='speech-txt-small'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
-              <div className="speech-12">
+              <div className="speech-12 speech-container-medium">
                 <img src={person2} className="personImgHome-2" width="50px" height="50px" alt="" />
-                <img src={speechMd} alt="" />
+                <img src={speechMd} alt=""/>
+                <span className='speech-txt-medium'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
-              <div className="speech-13">
+              <div className="speech-13 speech-container speech-container-large">
                 <img src={person3} className="personImgHome-2" width="70px" height="70px" alt="" />
-                <img src={speechLg} alt="" />
+                <img src={speechLg} alt=""/>
+                <span className='speech-txt-large'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
             </div>
 
             <div class="column-speech-mob">
-              <div className="speech-14">
+              <div className="speech-14 speech-container speech-container-small">
                 <img src={person4} className="personImgHome-2 speech-mob-sm" width="30px" height="30px" alt="" />
-                <img src={speechSm} alt="" />
+                <img src={speechSm} alt=""/>
+                <span className='speech-txt-small'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
-              <div className="speech-15">
+              <div className="speech-15 speech-container-medium">
                 <img src={person5} className="personImgHome-2" width="50px" height="50px" alt="" />
-                <img src={speechMd} alt="" />
+                <img src={speechMd} alt=""/>
+                <span className='speech-txt-medium'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
-              <div className="speech-16">
+              <div className="speech-16 speech-container-large">
                 <img src={person} className="personImgHome-2" width="70px" height="70px" alt="" />
-                <img src={speechLg} alt="" />
+                <img src={speechLg} alt=""/>
+                <span className='speech-txt-large'>Here are some of our graduates and students who explain what it’s like to learn with us, & why they chose ScoreHub.</span>
               </div>
               </div>
             </div>
@@ -256,10 +273,10 @@ export default function Home() {
       <Slider {...settings}>
           <div className="cardTwo-home">
             <img src={slideOneImage} className="homeSlideImg" alt="" />
-            {/* <div className='card-content'> */}
-              <p>Full Name</p>
-              <p>Title</p>
-            {/* </div> */}
+            <span className='card-content'>
+              <p><span>Full Name: </span>Rachel Lorem</p><br/>
+              <p><span>Title: </span> Executive Marketer</p>
+            </span>
           </div>
 
           <div className="cardTwo-home">

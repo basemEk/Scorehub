@@ -6,12 +6,16 @@ import twiter from '../../assets/twitter-xd.png'
 import linkedin from '../../assets/in-xd.png'
 import youtube from '../../assets/youtube-xd.png'
 import instagram from '../../assets/insta-xd.png'
-
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 export default function OurFounder() {
 
   return (
     <>
+    
+      <Chatbot cbot={cbot}/>
+
       <div className='founders-wrapper'>
         <div className='founders-txt'>
             <h1>OUR FOUNDER</h1>

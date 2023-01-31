@@ -1,3 +1,7 @@
+#myCarousel {
+    z-index: -1
+}
+
 .homeBanner {
     height: 987.48px;
 }
@@ -63,8 +67,7 @@
     transform: translateY(-70px);
 }
 
-.speech-3
- {
+.speech-3 {
     align-self: flex-end !important;
     transform: translateY(70px);
     transform: translateX(90px);
@@ -73,6 +76,7 @@
 .speech-4 {
     transform: translate(360px , -10px);
 }
+
 
 .speech-4,
 .speech-3,
@@ -131,6 +135,52 @@
 
 
 /* SPEECH ANIMATION */
+.speech-3 {
+    position: relative;
+    transform: scale(1);
+    left: 10%;
+}
+
+.speech-3:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.speech-4 {
+    position: relative;
+    transform: scale(1);
+    left: 22%;
+}
+
+.speech-4:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.speech-6 {
+    position: relative;
+}
+
+.speech-6:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.speech-7 {
+    position: relative;
+    transform: scale(1);
+    left: 22%;
+}
+
+.speech-7:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
 .speech-5 {
     position: relative;
     transform: scale(1);
@@ -138,19 +188,18 @@
 }
 
 .speech-5:hover {
-    transform: scale(1.8);
+    transform: scale(2.2);
     position: relative;
 }
 
 
 .speech-9 {
     position: relative;
-    /* transform: scale(1); */
     transition: transform 0.5s ease;
 }
 
 .speech-9:hover {
-    transform: scale(1.8);
+    transform: scale(2.2);
     position: relative;
 }
 
@@ -191,7 +240,6 @@
     position: relative;
     transform: scale(1);
     transition: transform 0.5s ease;
-
     position: relative;
  }
 
@@ -211,15 +259,6 @@
 
 .cardTwo-home>img {
     width: 100%;
-}
-
-.card-content {
-    display: none;
-}
-
-.card-content:hover {
-    display: block;
-    z-index: 1000;
 }
 
 .true-master>h1 {
@@ -257,8 +296,6 @@
     background-color: #9F89EF;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .container-vr-about>div {
@@ -273,12 +310,103 @@
     width: 42%;
 }
 
+      .speeches-mobile {
+          display: none;
+      }
+
+      /* Desktop Speech */
+      .speech-wrapper-medium {
+        position: relative;
+      }
+
+      .speech-text-medium {
+        position: absolute;
+        top: 58px;
+        left: 63%;
+        transform: translate(-50%, -50%);
+        color: black;
+        width: 58%;
+        font-size: 0.4rem !important;
+        text-align: center;
+    }
+
+      .speech-wrapper-small {
+        position: relative;
+      }
+
+      .speech-text-small {
+        position: absolute;
+        top: 13%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+        color: black;
+        width: 60%; 
+        font-size: 0.2rem !important; 
+        text-align: center; 
+      }
+
+      .speech-wrapper-large {
+        position: relative;
+      }
+
+      .speech-text-large {
+        position: absolute;
+        top: 43%; 
+        left: 61%; 
+        transform: translate(-50%, -50%); 
+        color: black;
+        width: 70%; 
+        font-size: 0.8rem !important; 
+        text-align: center; 
+      }
+
+
+      /* CARD - PEOPLE'S NAMES */
+    .cardTwo-home {
+        position: relative;
+    }
+
+    .cardTwo-home > span {
+        line-height: 17% !important;
+    }
+    
+    .card-content {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80.25%;
+        color: white;
+        background-color: #415DF7;
+        opacity: 0.6;
+        padding-top: 20px;
+        text-align: center;
+        height: 15%;
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .card-content > p > span {
+        font-weight: bold;
+    }
+    
+    .caption-text {
+        color: rgb(220, 249, 3);
+        font-size: 0.95rem;
+        font-weight: bold;
+    }
+
 
 
 
 
 
 @media (max-width: 768px) {
+    .speeches-mobile {
+        display: block;
+    }
+    
     .homeBanner {
         height: 243.88px;
     }
@@ -314,6 +442,55 @@
         font-size: 0.8rem;
     }
 
+
+    /* SPEECH */
+    .speech-container-large {
+        position: relative;
+    }
+
+    .speech-txt-large {
+        position: absolute;
+        top: 42%; /* or any value as per your requirement */
+        left: 59%; /* or any value as per your requirement */
+        transform: translate(-50%, -50%); /* to center the text */
+        color: black; /* text color */
+        font-size: 0.8rem; /* text size */
+        text-align: center; /* center align the text */
+        width: 60%;
+      }
+
+
+    .speech-container-medium {
+        position: relative;
+    }
+
+    .speech-txt-medium {
+        position: absolute;
+        top: 43%; /* or any value as per your requirement */
+        left: 56%; /* or any value as per your requirement */
+        transform: translate(-50%, -50%); /* to center the text */
+        color: black; /* text color */
+        font-size: 0.45rem; /* text size */
+        text-align: center; /* center align the text */
+        width: 30%;
+      }
+
+
+    .speech-container-small {
+        position: relative;
+    }
+
+    .speech-txt-small {
+        position: absolute;
+        top: 43%;
+        left: 83%; 
+        transform: translate(-50%, -50%);
+        color: black; 
+        font-size: 0.2rem;
+        text-align: center;
+        width: 30%;
+      }
+
     .cards-carousel-home {
         padding-bottom: 15% !important;
         background-color: #F0B365;
@@ -331,9 +508,6 @@
     }
 
     .speech-11 {
-        /* overflow-x: hidden; */
-        /* white-space: nowrap; */
-        /* text-overflow: ellipsis; */
         max-width:fit-content;
         padding-left: 25%;
     }
@@ -384,7 +558,22 @@
     }
     
     .cardTwo-home {
-        width: 0%;
+        position: relative;
+    }
+
+    .cardTwo-home > span {
+        line-height: 10% !important;
+    }
+    
+    .card-content {
+        top: 81%;
+        padding-top: 13px;
+        height: 15%;
+        font-size: 0.8rem;
+    }
+
+    .slick-dots {
+        padding-bottom: 2% !important;
     }
 
 }
@@ -393,9 +582,12 @@
 
 
 @media (min-width: 768px) and (max-width: 992px){
-
     .homeBanner {
         height: 499.2px;
+    }
+
+    .h1-h4-home>h1, .h1-h4-home>h4 {
+        font-size: 1.2rem;
     }
 
     .speeches {
@@ -462,10 +654,6 @@
     }
 
     .speech-14 {
-        /* overflow-x: hidden; */
-        /* white-space: nowrap; */
-        /* text-overflow: ellipsis; */
-        /* max-width:fit-content; */
         display: inline-block;
         padding-left: 25%;
     }
@@ -481,5 +669,16 @@
 
     .cardTwo-home, .cards-carouselTwo-home {
         margin: 0 auto;
+    }
+}
+
+@media (min-width: 2520px) {
+    .card-content {
+        padding-top: 6%;
+        font-size: 1.25rem;
+    }
+
+    .cardTwo-home > span {
+        line-height: 37% !important;
     }
 }

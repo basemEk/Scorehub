@@ -1,3 +1,7 @@
+.mySwiper {
+    z-index: -1 !important;
+}
+
 .kids-code-video iframe {
     width: 90%;
     margin: 0 auto;
@@ -7,6 +11,28 @@
 .btn-timeline {
     margin-left: 5%;
 }
+
+.link-to-description {
+    text-decoration: none;
+    color: white;
+}
+
+.link-to-description:hover {
+    color: white;
+}
+
+.course-timeline-slide {
+    margin-top: -2%;
+}
+
+.swiper-pagination-bullet {
+    font-size: 26px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #764AF1
+}
+
+
 
 
 /* PAGINATION SLIDER */
@@ -26,43 +52,12 @@
 }
 
 .swiper-pagination-bullet-active {
-    color: blue
+    color: #FCA12A;
 }
 
 .swiper-pagination-bullet {
     opacity: 100% !important;
 }
-
-/* .swiper-pagination-bullet-active:nth-child(1) {
-    background-image: url('../../assets/oneBold.png');
-    transition: all 0.5s ease-in-out;
-    width: 20px;
-}
-
-.swiper-pagination-bullet:nth-child(1) {
-    background-image: url('../../assets/one.png');
-    width: 20px;
-}
-
-.swiper-pagination-bullet-active:nth-child(2) {
-    background-image: url('../../assets/twoBold.png');
-    width: 20px;
-}
-
-.swiper-pagination-bullet:nth-child(2) {
-    background-image: url('../../assets/two.png');
-    width: 20px;
-}
-
-.swiper-pagination-bullet-active:nth-child(3) {
-    background-image: url('../../assets/threeBold.png');
-    width: 20px;
-}
-
-.swiper-pagination-bullet:nth-child(3) {
-    background-image: url('../../assets/three.png');
-    width: 20px;
-} */
 
 
 
@@ -75,6 +70,7 @@
     bottom: 100% !important;
     left: 22% !important;
     width: 100%;
+    margin-bottom: 12% !important;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -82,4 +78,21 @@
     height: 40px;
 }
 
+.back-to-courses {
+    margin-bottom: 15% !important;
+}
+
+.swiper-pagination-bullet {
+    font-size: 26px;
+    padding-top: 0;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .swiper-pagination-bullet {
+        font-size: 26px;
+        padding-top: 0;
+        margin-top: 4% !important;
+    }
 }

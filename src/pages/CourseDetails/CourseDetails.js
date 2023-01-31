@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import './CourseDetails.css'
 import { MdArrowBackIosNew }  from 'react-icons/md'
+import { Button, ButtonGroup } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png' 
 
 
 export default function CourseDetails() {
@@ -28,6 +33,8 @@ export default function CourseDetails() {
 
   return (
     <>
+      <Chatbot cbot={cbot}/>
+      
     <section className='bg-color-course-details'>
       <div className='container course-details-wrapper'>
         <div className='back-to-courses'>
@@ -35,6 +42,18 @@ export default function CourseDetails() {
               <div className='left-flasher'><MdArrowBackIosNew size={24} /></div> 
               <div><h3>Courses</h3></div>
             </a>
+        </div>
+        <div className="toggle-course">
+          <ButtonGroup>
+           <Button color="primary">
+                DESCRIPTION
+           </Button>
+            <Button className='btn btn-light'>
+              <Link to="/courses/course-time-line" className='link-to-timeline'>
+                TIMELINE
+              </Link>
+            </Button> 
+          </ButtonGroup>
         </div>
         <div className='row d-lg-flex flex-column-md g-5'>
             <div className='col-lg-4 col-12 course-details-image'>

@@ -10,11 +10,13 @@ import CourseDetails from "./pages/CourseDetails/CourseDetails";
 import CourseTimeLine from "./pages/CourseTimeLine/CourseTimeLine";
 import PlansAndPrices from "./pages/PlansAndPrices/PlansAndPrices";
 import Contact from "./pages/Contact/Contact";
+import './components/Chatbot/Chatbot.css';
+import SignUp from "./pages/SignUp/SignUp";
 
 
 function App() {
   return (
-    <div>
+    <div className="rootComponent">
       <Navbar />
       
       <Routes>
@@ -22,10 +24,11 @@ function App() {
          <Route path="/about-us" element={<About />} />
          <Route path="/our-founder" element={<OurFounder/>} />
          <Route path="/courses" element={<Courses />} />
-         <Route path="/course-details" element={<CourseDetails />} />
-         <Route path="/course-time-line" element={<CourseTimeLine />} />
+         <Route path="/courses/course-details" element={<CourseDetails />} />
+         <Route path="/courses/course-time-line" element={<CourseTimeLine />} />
          <Route path="/plans-prices" element={<PlansAndPrices />} />
          <Route path="/contact-us" element={<Contact />} />
+         <Route path="sign-up" element={<SignUp />} />
       </Routes> 
 
       <Footer /> 

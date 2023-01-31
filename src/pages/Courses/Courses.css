@@ -1,5 +1,6 @@
 .courses-wrapper {
     background-color: #836CB1;
+    padding-bottom: 7%  !important; 
 }
 
 .courses-heading-search {
@@ -7,7 +8,11 @@
     display: flex;
     align-items: center;
     position: relative;
-    left: 17%;
+    left: 23%;
+}
+
+.courses-heading-search {
+    padding-bottom: 4%;
 }
 
 .heading-courses h1 {
@@ -46,100 +51,161 @@
     font-size: 20px;
     color: #fff;
   }
-  
 
-.courses-container {
-    display: flex;
-    flex-direction: row;
+
+.slickCourseWrapper {
+    background-color: #836CB1;
+}
+
+.cs {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
     justify-content: center;
-    align-items: center;
+}
+
+.slickCourseContainer {
+    display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding-bottom: 4%;
-}
-  
-.courses-container .card-course {
-    margin: 3%;
-    border-radius: 25px;
-}
+    gap: 2%;
+    width: 100%;
+    justify-content: center;
+} 
 
-.courses-container .card-course{
-    max-width: 100% ;
+.card-img-course {
+    border-radius: 15px;
 }
-
-
 
 .card-img-course:hover {
-    border: 12px solid #FCA12A;
-    border-radius: 25px;
-    transition: all 0.4s linear !important;
-    cursor: pointer;
-    overflow: hidden;
-    /* width: 100%; */
+    border: 3px solid #FCA12A;
 }
 
-.card-img-top {
-    border-radius: 5%;
-}
-
+/* CARD OVERLAY TEXT */
 .top-right {
-    position: relative;
-    top: 28px;
-    left: 166px;
-    z-index: 1000;
+    position: absolute;
+    z-index: 1;
 }
 
-.card-course button {
-    position: relative;
-    top: 7.375rem;
-    left: -9.125rem;
+.card-course {
+    margin-bottom: 1%;
 }
 
-.className {
+.card-overlay {
+    position: relative;
+}
+
+.caption {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #415DF7;
+    opacity: 0.7;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 30%;
+}
+
+.caption-text {
+    color: rgb(220, 249, 3);
+    font-size: 0.95rem;
     font-weight: bold;
 }
 
 
+/* HEART */
+.heart-svg {
+    position: relative;
+    left: 165px;
+    top: 12px !important;
+}
 
 
-@media (max-width: 768px) {    
-    .courses-container {
-        padding-bottom: 15%;
+
+
+@media (max-width: 800px) {
+    .heading-courses {
+        margin-top: 5%;
+    }
+
+    .search-container button {
+        position: absolute;
+        top: 8px;
+        right: 31%;
+    }
+
+    .search-container input[type=text] {
+        width: 70% !important;
+        margin: 0 auto 12% auto !important;
+        left: 0 !important;
     }
 
     .courses-heading-search {
         flex-direction: column;
+        margin: 0 auto;
+        display: block;
+        margin-right: 15%;
     }
 
-    .courses-heading-search {
-        padding-top: 8%;
-        left: 0;
+    .slickCourseWrapper {
+        width: 70%;
         margin: 0 auto;
     }
 
-    .search-container input[type=text] {
-        width: 100px !important;
-        left: 0 !important;
-        width: 250px !important;
-    }   
-      
-      .search-container button {
-        right: 1%;
-        border: none;
-      }
-}
+    .courses-wrapper {
+        padding-bottom: 17%  !important; 
+    }
 
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px !important;
+        color:yellow;
+    }
+
+    .slick-prev:before {
+        margin-right: 10%;
+    }
+
+    .card-course {
+        margin-bottom: 5%;
+    }
+}
 
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .search-container input[type=text] {
-        width: 400px !important;
+    .slickCourseWrapper {
+        width: 70%;
+        margin: 0 auto;
     }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px !important;
+        color:yellow;
+    }
+
+    .slick-prev:before {
+        margin-right: 10%;
+    }
+
+    .card-course {
+        margin-bottom: 5%;
+    }
+
 }
+
 
 
 @media (min-width: 2520px) {
     .courses-heading-search {
-        left: 32%;
+        padding-top: 5%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0;
+        margin-right: 5%;
+        justify-content: center;
     }
+
 }

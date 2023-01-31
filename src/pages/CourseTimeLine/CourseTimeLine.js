@@ -1,13 +1,15 @@
 import React from 'react'
 import './CourseTimeLine.css'
 import { MdArrowBackIosNew }  from 'react-icons/md'
-import { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { Button, ButtonGroup } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+import cbot from '../../assets/chatbot.png'
+import Chatbot from '../../components/Chatbot/Chatbot'
 
 
 
@@ -21,7 +23,10 @@ export default function CourseDetails() {
 
 
   return (
-    <>
+    <div>
+
+      <Chatbot cbot={cbot} />
+
       <Swiper
         pagination={pagination}
         modules={[Pagination]}
@@ -38,7 +43,21 @@ export default function CourseDetails() {
               <div><h3>Courses</h3></div>
             </a>
         </div>
-        <div className='row d-lg-flex flex-column-md g-5'>
+        <div className="toggle-courser">
+          <ButtonGroup>
+           <Button color="primary">
+            <Link to="/courses/course-details" className='link-to-description'>
+              DESCRIPTION
+            </Link>
+           </Button>
+            <Button className='btn btn-light'>
+              <Link to="/courses/course-time-line" className='link-to-timeline'>
+                TIMELINE
+              </Link>
+            </Button> 
+          </ButtonGroup>
+        </div>
+        <div className='row d-lg-flex flex-column-md g-5 course-timeline-slide'>
             <div className='col-lg-4 col-12 course-details-image'>
                 <img src="https://picsum.photos/seed/picsum/400/460" className='pic' alt="course details" />
             </div>
@@ -70,12 +89,26 @@ export default function CourseDetails() {
               <div><h3>Courses</h3></div>
             </a>
         </div>
-        <div className='row d-lg-flex flex-column-md g-5'>
+        <div className="toggle-courser">
+          <ButtonGroup>
+           <Button color="primary">
+            <Link to="/courses/course-details" className='link-to-description'>
+              DESCRIPTION
+            </Link>
+           </Button>
+            <Button className='btn btn-light'>
+              <Link to="/courses/course-time-line" className='link-to-timeline'>
+                TIMELINE
+              </Link>
+            </Button> 
+          </ButtonGroup>
+        </div>
+        <div className='row d-lg-flex flex-column-md g-5 course-timeline-slide'>
             <div className='col-lg-4 col-12 course-details-image'>
                 <img src="https://picsum.photos/seed/picsum/400/460" className='pic' alt="course details" />
             </div>
             <div className='col-lg-6 col-12 mb-5 '>
-                <h2>The Brain & Mental Health</h2>
+                <h2>How To Introspective?</h2>
                 <p>This video will explain briefly the link between the neurology of the brain and mental health. It will help you understand better how mental health disorders are affected by the chemicals in your brain and the solutions to these disorders.</p>
                 <br />
  
@@ -101,12 +134,26 @@ export default function CourseDetails() {
               <div><h3>Courses</h3></div>
             </a>
         </div>
-        <div className='row d-lg-flex flex-column-md g-5'>
+        <div className="toggle-courser">
+          <ButtonGroup>
+           <Button color="primary">
+            <Link to="/courses/course-details" className='link-to-description'>
+              DESCRIPTION
+            </Link>
+           </Button>
+            <Button className='btn btn-light'>
+              <Link to="/courses/course-time-line" className='link-to-timeline'>
+                TIMELINE
+              </Link>
+            </Button> 
+          </ButtonGroup>
+        </div>
+        <div className='row d-lg-flex flex-column-md g-5 course-timeline-slide'>
             <div className='col-lg-4 col-12 course-details-image'>
                 <img src="https://picsum.photos/seed/picsum/400/460" className='pic' alt="course details" />
             </div>
             <div className='col-lg-6 col-12 mb-5 '>
-                <h2>The Brain & Mental Health</h2>
+                <h2>Benefits Of Mindfulness</h2>
                 <p>This video will explain briefly the link between the neurology of the brain and mental health. It will help you understand better how mental health disorders are affected by the chemicals in your brain and the solutions to these disorders.</p>
                 <br />
  
@@ -125,6 +172,6 @@ export default function CourseDetails() {
         </SwiperSlide>
 
       </Swiper>
-    </>
+    </div>
   )
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import './PlansAndPrices.css'
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 export default function PlansAndPrices() {
   return (
     <>
+      <Chatbot cbot={cbot}/>
+
       <div className='plans-wrapper'>
 
         <section className='container plans-heading py-5'>

@@ -1,9 +1,12 @@
 import React from 'react'
 import './Contact.css'
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 export default function Contact() {
   return (
     <>
+    <Chatbot cbot={cbot}/>
     <div className='contact-wrapper d-lg-flex justify-content-start align-items-center h-100'>
         <div className='contact-text'>
             <h1>CONTACT US</h1>

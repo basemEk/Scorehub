@@ -25,6 +25,14 @@
     color: rgb(232, 230, 230);
 }
 
+.toggle-course {
+    margin-bottom: 2%;
+}
+
+.link-to-timeline {
+    text-decoration: none;
+}
+
 .left-flasher {
     color: #fff;
 }

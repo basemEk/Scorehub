@@ -1,329 +1,494 @@
 import React from 'react'
 import AddToCardBtn from '../../components/AddToCardBtn/AddToCardBtn'
+import courses from '../../assets/courses.jpg'
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import './Courses.css'
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 
 export default function Courses() {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: true,
+    centerPadding: '10px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true,
+        }
+      },
+      
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      }
+    ]
+  };
+
 
   return (
     <>
+      <Chatbot cbot={cbot}/>
+      
     <div className='courses-wrapper'>
-    <div className='courses-heading-search'>
-        <div className='heading-courses'>
-          <h1>COURSES</h1>
-          <p>Few lines about our courses....</p>
-        </div>
-        <div className="search-container">
-          <form>
-            <input type="text" placeholder="Search for Course.." name="search" />
-            <button type="submit"><i className="fa fa-search" /></button>
-          </form>
-        </div>
-    </div>
-
-      <div id="carouselExampleIndicators" data-interval="false" className="container carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" aria-current="false" aria-label="Slide 1" />
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} aria-label="Slide 2" />
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={2} aria-label="Slide 3" />
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-          <div className="courses-container">
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
+      <div className='courses-heading-search'>
+          <div className='heading-courses'>
+            <h1>COURSES</h1>
+            <p>Few lines about our courses....</p>
           </div>
-          
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <a href="/course-details" alt='course'><button>buy now</button></a>
+          <div className="search-container">
+            <form>
+              <input type="text" placeholder="Search for Course.." name="search" />
+              <button type="submit"><i className="fa fa-search" /></button>
+            </form>
           </div>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-      </div>
-          </div>
-          <div className="carousel-item">
-          <div className="courses-container">
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-            <button>buy now</button>
-          </div>        </div>
-     </div>
-          </div>
-          <div className="carousel-item">
-          <div className="courses-container">
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-        <div className="card-course">
-          <div className="top-right">
-            <AddToCardBtn />
-          </div>
-          <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
-          <button>buy now</button>
-        </div>
-          </div>
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
 
-
-      {/* <div className='container'>
+      <div className='slickCourseWrapper'>
         <Slider {...settings}>
-        <div className="card-course">
+        <div className='cs'>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}} className="card-overlay">
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+            <div className="caption">
+              <span className="caption-text">MINDHUB</span><br/>
+              <span className="caption-text">MENTAL HEALTH TIPS</span>
+            </div>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
           </div>
         </div>
         <div className="card-course">
           <div className="top-right">
             <AddToCardBtn />
           </div>
-          <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" className="img-fluid card-img-course" alt="image1" />
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+          </div>
+        </div>
+
+         <div className='cs'>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <div className='cs'>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div className='slickCourseContainer'>
+          <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
+        <div className="card-course">
+          <div className="top-right">
+            <AddToCardBtn />
+          </div>
+          <div style={{width: "200px", height: "300px"}}>
+            <a href="/courses/course-details" alt='course'>
+              <img src={courses} style={{height: '100%', width: '100%'}} className="img-fluid card-img-course" alt="image1" />
+            </a>
+          </div>
+        </div>
           </div>
         </div>
         </Slider>
-      </div> */}
+      </div>
     </div>
+
     </>
   )
 }

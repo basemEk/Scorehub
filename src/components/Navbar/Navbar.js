@@ -34,7 +34,7 @@ function Navbar() {
                 <a className="nav-link navbar-light" href="/courses">COURSES</a>
                 <a className="nav-link navbar-light" href="/our-founder">OUR FOUNDER</a>
                 <a className="nav-link navbar-light" href="/blogs">BLOG</a>
-                <a className="nav-link navbar-light" href="/bundles">BUNDLES</a>
+                <a className="nav-link navbar-light" href="/plans-prices">BUNDLES</a>
                 <a className="nav-link navbar-light" href="/contact-us">CONTACT US</a>
                 <div>
                 </div>

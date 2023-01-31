@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './ShowPassword.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import './ShowPassword.css';
 
 
 function ShowPassword() {

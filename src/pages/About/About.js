@@ -4,11 +4,15 @@ import kidsPlaying from '../../assets/kids-playing.png'
 import girlStudying from '../../assets/girl-studying.png'
 import './About.css'
 import bannerVr from '../../assets/vr-kid.png';
+import Chatbot from '../../components/Chatbot/Chatbot'
+import cbot from '../../assets/chatbot.png'
 
 
 export default function About() {
   return (
     <>
+      <Chatbot cbot={cbot}/>
+      
     <section className='container-about p-lg-5'>
       <div className='about-page p-5'>
             <div className='d-lg-flex about-first-row'>
