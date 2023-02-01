@@ -2,10 +2,10 @@ import React from 'react'
 import kidsStudying from '../../assets/kids-studying.png'
 import kidsPlaying from '../../assets/kids-playing.png'
 import girlStudying from '../../assets/girl-studying.png'
-import './About.css'
 import bannerVr from '../../assets/vr-kid.png';
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
+import './About.css'
 
 
 export default function About() {

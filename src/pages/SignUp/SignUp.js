@@ -15,7 +15,7 @@ export default function SignUp() {
         <h5>Create your Eduverse Account</h5>
         <label htmlFor="email">Enter Email</label>
         <input type="email" className="signup-email" placeholder="example@hotmail.com" />
-        <label htmlFor="password">Enter Password</label>
+        <label htmlFor="password">Create Password</label>
         <ShowPassword />
         <label htmlFor="password">Repeat Password</label>
         <ShowPassword /><br />

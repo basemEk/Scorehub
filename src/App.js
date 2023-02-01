@@ -12,6 +12,7 @@ import PlansAndPrices from "./pages/PlansAndPrices/PlansAndPrices";
 import Contact from "./pages/Contact/Contact";
 import './components/Chatbot/Chatbot.css';
 import SignUp from "./pages/SignUp/SignUp";
+import Blog from "./pages/Blog/Blog";
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
          <Route path="/courses/course-time-line" element={<CourseTimeLine />} />
          <Route path="/plans-prices" element={<PlansAndPrices />} />
          <Route path="/contact-us" element={<Contact />} />
-         <Route path="sign-up" element={<SignUp />} />
+         <Route path="/sign-up" element={<SignUp />} />
+         <Route path="/blogs" element={<Blog />} />
       </Routes> 
 
       <Footer /> 

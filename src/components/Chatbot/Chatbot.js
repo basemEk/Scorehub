@@ -1,5 +1,4 @@
 import React from 'react'
-import cbot from '../../assets/chatbot.png'
 
  const Chatbot = ({cbot}) => {
   return (
