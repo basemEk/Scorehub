@@ -23,9 +23,9 @@ export default function CourseDetails() {
 
 
   return (
-    <div>
-
-      <Chatbot cbot={cbot} />
+    <div className='ctl-wrapper'>
+      
+      <Chatbot cbot={cbot} id="ctl-cbot" />
 
       <Swiper
         pagination={pagination}

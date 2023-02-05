@@ -13,6 +13,7 @@ import Contact from "./pages/Contact/Contact";
 import './components/Chatbot/Chatbot.css';
 import SignUp from "./pages/SignUp/SignUp";
 import Blog from "./pages/Blog/Blog";
+import BlogDetails from "./pages/BlogDetails/BlogDetails";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
          <Route path="/contact-us" element={<Contact />} />
          <Route path="/sign-up" element={<SignUp />} />
          <Route path="/blogs" element={<Blog />} />
+         <Route path="/blogs/blog-details" element={<BlogDetails />} />
       </Routes> 
 
       <Footer /> 

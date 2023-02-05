@@ -1,5 +1,5 @@
-.mySwiper {
-    z-index: -1 !important;
+.ctl-wrapper {
+    z-index: 2 !important;
 }
 
 .kids-code-video iframe {
