@@ -14,12 +14,15 @@ import './components/Chatbot/Chatbot.css';
 import SignUp from "./pages/SignUp/SignUp";
 import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import ScatteredItems from "./components/ScatterdItems/ScatterdItems";
+import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 
 
 function App() {
   return (
     <div className="rootComponent">
       <Navbar />
+      <ScatteredItems />
       
       <Routes>
          <Route exact path="/" element={<Home />} />
@@ -33,6 +36,7 @@ function App() {
          <Route path="/sign-up" element={<SignUp />} />
          <Route path="/blogs" element={<Blog />} />
          <Route path="/blogs/blog-details" element={<BlogDetails />} />
+         <Route path="/forget-password" element={<ForgetPassword />} />
       </Routes> 
 
       <Footer /> 

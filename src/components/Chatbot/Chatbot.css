@@ -9,3 +9,7 @@
     cursor: pointer;
     z-index: 9;
 }
+
+.nvbr-index {
+    z-index: 1000000000 !important;
+}

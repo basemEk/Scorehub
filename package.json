@@ -20,6 +20,7 @@
     "reactstrap": "^9.1.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.5",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

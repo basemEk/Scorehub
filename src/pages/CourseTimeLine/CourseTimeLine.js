@@ -12,7 +12,6 @@ import cbot from '../../assets/chatbot.png'
 import Chatbot from '../../components/Chatbot/Chatbot'
 
 
-
 export default function CourseDetails() {
     const pagination = {
         clickable: true,
