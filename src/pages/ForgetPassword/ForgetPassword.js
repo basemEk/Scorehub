@@ -59,7 +59,7 @@ const ForgetPassword = () => {
                     {(validate.validate && validate.validate.email) ? validate.validate.email[0] : ''}
                 </div>
              <br/>
-            <input type="submit" className="btn forget-btn" value="Send Email" />
+            <input type="submit" className="btn forget-btn" value="Send Password Reset Link" />
         </form>
     </div>
     </div>

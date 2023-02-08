@@ -1,5 +1,6 @@
 .blog-detail-wrapper {
     background-color: #FDF18A;
+    padding-bottom: 7%;
 }
 
 .blogDetail-title {
@@ -19,7 +20,7 @@
     font-size: 18px;
     line-height: 1.5;
     margin: 0 20%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     text-align: center;
   }
   
@@ -33,12 +34,22 @@
     margin-bottom: 50px;
   }
 
+  .back-to-blogs {
+    display: block;
+    margin: 0 auto;
+  }
+
+
 
 
   @media (max-width: 768px) {
     .blogDetail-image {
         height: 100%;
         width: 90%;
+    }
+
+    .blogDetail-content {
+      margin: 0 10%;
     }
   }
 

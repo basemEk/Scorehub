@@ -1,0 +1,30 @@
+.noBlogs-wrapper {
+    position: relative;
+    color: white;
+    background-color: #8FB437;
+    height: 600px;
+    z-index: -1;
+}
+
+.blog-noblogs {
+    position: absolute;
+    right: 68% !important;
+    top: 10%;
+    left: 5%;
+}
+
+.blog-noblogs > p {
+    color: white;
+    font-weight: lighter;
+}
+
+.notAvailableBlogs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .scat-noblogs {
+    z-index: 1000 !important;
+} */

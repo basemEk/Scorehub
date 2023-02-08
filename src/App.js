@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
 import About from "./pages/About/About";
 import OurFounder from "./pages/OurFounder/OurFounder";
 import Courses from "./pages/Courses/Courses";
@@ -16,13 +16,15 @@ import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import ScatteredItems from "./components/ScatterdItems/ScatterdItems";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
+// import NoBlogs from "./pages/NoBlogs/NoBlogs";
+
 
 
 function App() {
   return (
     <div className="rootComponent">
       <Navbar />
-      <ScatteredItems />
+      {/* <ScatteredItems /> */}
       
       <Routes>
          <Route exact path="/" element={<Home />} />
@@ -37,6 +39,7 @@ function App() {
          <Route path="/blogs" element={<Blog />} />
          <Route path="/blogs/blog-details" element={<BlogDetails />} />
          <Route path="/forget-password" element={<ForgetPassword />} />
+         {/* <Route path="/no-blogs" element={<NoBlogs />} /> */}
       </Routes> 
 
       <Footer /> 
