@@ -4,7 +4,7 @@ import Chatbot from "../../components/Chatbot/Chatbot";
 import cbot from "../../assets/chatbot.png";
 import NoBlogs from "../NoBlogs/NoBlogs";
 
-const blogs = [1, 2, 3, 4, 5, 6];
+const blogs = [];
 
 const BlogCard = ({ blog }) => (
   <div className="blog-wrapper">

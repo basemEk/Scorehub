@@ -21,6 +21,7 @@ import slideThreeImage from '../../assets/image3-slider.png';
 import bannerVr from '../../assets/vr-kid.png';
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
+import CookieExample from '../../components/Cookies/Cookies';
 
 
 export default function Home() {
@@ -71,6 +72,7 @@ export default function Home() {
   return (
     <>
       <Chatbot cbot={cbot}/>
+      <CookieExample />
 
       <div>
         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">

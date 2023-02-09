@@ -14,9 +14,8 @@ import './components/Chatbot/Chatbot.css';
 import SignUp from "./pages/SignUp/SignUp";
 import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
-import ScatteredItems from "./components/ScatterdItems/ScatterdItems";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
-// import NoBlogs from "./pages/NoBlogs/NoBlogs";
+// import ScatteredItems from "./components/ScatterdItems/ScatterdItems";
 
 
 
@@ -25,7 +24,7 @@ function App() {
     <div className="rootComponent">
       <Navbar />
       {/* <ScatteredItems /> */}
-      
+
       <Routes>
          <Route exact path="/" element={<Home />} />
          <Route path="/about-us" element={<About />} />
@@ -39,7 +38,6 @@ function App() {
          <Route path="/blogs" element={<Blog />} />
          <Route path="/blogs/blog-details" element={<BlogDetails />} />
          <Route path="/forget-password" element={<ForgetPassword />} />
-         {/* <Route path="/no-blogs" element={<NoBlogs />} /> */}
       </Routes> 
 
       <Footer /> 

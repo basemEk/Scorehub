@@ -13,3 +13,21 @@
 .nvbr-index {
     z-index: 1000000000 !important;
 }
+
+
+@media (max-width: 768px) {
+    .cbot-img {
+        position: relative;
+        width: 60px;
+        right: -18px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .cbot-img {
+        position: relative;
+        width: 70px;
+        right: -12px !important;
+    }
+}
