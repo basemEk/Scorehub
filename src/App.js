@@ -18,7 +18,6 @@ import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 // import ScatteredItems from "./components/ScatterdItems/ScatterdItems";
 
 
-
 function App() {
   return (
     <div className="rootComponent">

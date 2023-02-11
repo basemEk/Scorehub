@@ -6,11 +6,20 @@ import bannerVr from '../../assets/vr-kid.png';
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
 import './About.css'
+import { Helmet } from 'react-helmet-async';
 
 
 export default function About() {
   return (
     <>
+    <Helmet>
+      <title>About</title>
+      <meta name="description" content="blended learning personalizing education for students, 
+          educational incentives for students, educational devices for students" />
+
+      <link rel="canonical" href="/about-us" />
+    </Helmet>
+    
       <Chatbot cbot={cbot}/>
       
     <section className='container-about p-lg-5'>

@@ -1,3 +1,35 @@
+/* SEARCH BAR */
+.searchBlog-container {
+  position: absolute;
+  left: 25%;
+  top: 5%;
+}
+
+.searchBlog-container input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background-color: #f2f0f5;
+  width: 500px;
+  position: relative;
+  left: 25%;
+}
+
+.searchBlog-container button {
+  position: absolute;
+  top: 8px;
+  right: -23%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+form .blog-magnifier {
+  color: #7AC667 !important
+}
+
+
+
 .blog-wrapper {
     display: flex;
     flex-direction: row;
@@ -72,6 +104,24 @@
     cursor: pointer;
     position: relative;
   }
+
+
+  /* RESPONSIVE SEARCH BAR */
+  @media (max-width: 800px) {
+    .searchBlog-container button {
+        position: absolute;
+        top: 8px;
+        right: 31%;
+    }
+
+    .searchBlog-container input[type=text] {
+        width: 70% !important;
+        margin: 0 auto 12% auto !important;
+        left: 0 !important;
+    }
+  }
+
+
 
   
 

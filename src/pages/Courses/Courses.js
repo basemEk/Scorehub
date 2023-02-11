@@ -71,7 +71,8 @@ export default function Courses() {
 
   return (
     <>
-      <Chatbot cbot={cbot}/>
+
+    <Chatbot cbot={cbot}/>
       
     <div className='courses-wrapper'>
       <div className='courses-heading-search'>

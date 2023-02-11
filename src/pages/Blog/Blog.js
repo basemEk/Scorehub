@@ -31,6 +31,14 @@ const BlogCard = ({ blog }) => (
 export default function Blog() {
   return (
     <div>
+
+      <div className="searchBlog-container">
+        <form>
+          <input type="text" placeholder="Search for Blogs.." name="search" />
+          <button type="submit"><i className="fa fa-search blog-magnifier" /></button>
+        </form>
+      </div>
+
       {blogs == 0 ? (
         <NoBlogs />
       ) : (

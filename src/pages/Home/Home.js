@@ -1,9 +1,9 @@
 import React from 'react'
 import './Home.css'
-import slider1 from '../../assets/landing-banner.png';
-import slider2 from '../../assets/landing-banner-2.png';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import slider1 from '../../assets/landing-banner.png';
+import slider2 from '../../assets/landing-banner-2.png';
 import Slider from "react-slick";
 import ThreeDCarousel from '../../components/ThreeDCarousel/ThreeDCarousel';
 import play from '../../assets/Play.svg'
