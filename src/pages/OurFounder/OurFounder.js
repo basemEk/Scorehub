@@ -8,11 +8,18 @@ import youtube from '../../assets/youtube-xd.png'
 import instagram from '../../assets/insta-xd.png'
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
+import { Helmet } from 'react-helmet-async'
+
 
 export default function OurFounder() {
 
   return (
     <>
+    <Helmet>
+      <title>Founder</title>
+      <meta name="description" content="educational institution, educational institutes in dubai, mass education institute"/>
+      <link rel="canonical" href="/our-founder" />
+    </Helmet>
     
       <Chatbot cbot={cbot}/>
 

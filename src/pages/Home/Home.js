@@ -22,6 +22,7 @@ import bannerVr from '../../assets/vr-kid.png';
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
 import CookieExample from '../../components/Cookies/Cookies';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Home() {
@@ -71,6 +72,15 @@ export default function Home() {
 
   return (
     <>
+    <Helmet>
+      <title>Home Page</title>
+      <meta name="description" content="time master skills development center, skill center, online math tutor, remedial math classes, remedial classes 
+       , best online learning for kids, difference between e learning and online learning "/>
+
+    <link rel="canonical" href="/" />
+
+    </Helmet> 
+
       <Chatbot cbot={cbot}/>
       <CookieExample />
 

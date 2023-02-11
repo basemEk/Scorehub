@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './Courses.css'
 import Chatbot from '../../components/Chatbot/Chatbot'
 import cbot from '../../assets/chatbot.png'
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Courses() {
@@ -71,6 +72,14 @@ export default function Courses() {
 
   return (
     <>
+
+    <Helmet>
+    <title>Courses</title>
+      <meta name="description" content="a level maths online course, accredited french courses online, better social skills, better social skills, improve social skills, social skills elementary, physics class 11, physics class 12, chemistry lessons, chemistry lessons for beginners, english lessons, conversational english lesson plans, english lessons near me"/>
+
+      <link rel="canonical" href="/courses" />
+
+    </Helmet>
 
     <Chatbot cbot={cbot}/>
       
