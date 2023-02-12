@@ -10,7 +10,7 @@ const BlogCard = ({ blog }) => (
   <div className="blog-wrapper">
     <div className="blog-square">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeegHFQgnzvog9sHSdnTq5U3Qs7CaNS_3PA&usqp=CAU"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0JxOP71HMYcsv3WRgTTr_Ly6YZRLTnhcVUOOfilCG8ue886r5qQYt_B_pQJxYhhrs4o&usqp=CAU"
         alt={`photos for item `}
         className="blog-img"
       />

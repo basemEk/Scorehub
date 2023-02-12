@@ -1,6 +1,6 @@
-#myCarousel {
+/* #myCarousel {
     z-index: -1
-}
+} */
 
 .homeBanner {
     height: 987.48px;
@@ -403,6 +403,30 @@
 
 
 @media (max-width: 768px) {
+    .cta-btn-home {
+        font-size: 0.775rem !important;
+    }
+
+    .play-btn {
+        font-size: 0.775rem !important;
+        width: 20px;
+    }
+
+    .watch-book {
+        position: relative;
+        display: inline-block;
+        top: -150px;
+        left: 200px;
+    }
+
+    .watch-book {
+        font-size: small;
+    }
+
+    .watch-video {
+        font-size: 0.650rem;  
+    }
+
     .speeches-mobile {
         display: block;
     }
@@ -582,6 +606,34 @@
 
 
 @media (min-width: 768px) and (max-width: 992px){
+    .cta-btn-home {
+        font-size: 1.2rem !important;
+    }
+
+    .play-btn {
+        font-size: 0.775rem !important;
+        width: 50px;
+    }
+
+    .watch-book {
+        position: relative;
+        display: inline-block;
+        top: -10px;
+        left: 10px;
+    }
+
+    .watch-book {
+        font-size: medium;
+    }
+
+    .watch-video {
+        font-size: 1.2rem;
+        width: 150px;
+        font-weight: lighter;
+    }
+
+
+
     .homeBanner {
         height: 499.2px;
     }

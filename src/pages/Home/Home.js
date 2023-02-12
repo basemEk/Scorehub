@@ -78,7 +78,6 @@ export default function Home() {
        , best online learning for kids, difference between e learning and online learning "/>
 
     <link rel="canonical" href="/" />
-
     </Helmet> 
 
       <Chatbot cbot={cbot}/>
@@ -92,12 +91,15 @@ export default function Home() {
                     <div className='h1-h4-home'>
                         <h1>Let’s learn about new knowledge & abilities.</h1><br/>
                         <h4>Let’s discover new friends & have learning experience with our beautiful teachers!</h4><br/>
-                        <div class="container">
-                          <div className="video-backg">
-                            <p className="lead">WATCH VIDEO</p>
-                            <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" alt='play button' />
+                        <div className="container-watch-book">
+                          <div className='watch-book'>
+                            <div className="video-backg">
+                              <p className="watch-video">WATCH VIDEO</p>
+                              <img src={play} className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" alt='play button' />
+                            </div>
+                            <div class="col"><button type="button" class="btn btn-light btn-lg cta-btn-home">BOOK NOW</button></div>
                           </div>
-                          <div class="col"><button type="button" class="btn btn-light btn-lg">BOOK NOW</button></div>
+                          
                           <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                           aria-hidden="true">
                           <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
