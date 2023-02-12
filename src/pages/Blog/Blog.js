@@ -30,7 +30,7 @@ const BlogCard = ({ blog }) => (
 
 export default function Blog() {
   return (
-    <div>
+    <div className="blogs-container">
 
       {/* <div className="searchBlog-container">
         <form>
@@ -40,10 +40,16 @@ export default function Blog() {
       </div> */}
 
       {blogs == 0 ? (
+        
         <NoBlogs />
       ) : (
         <>
           <Chatbot cbot={cbot} />
+          <div className="blogs-intro container">
+            <h2>Take a time to read our blogs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nobis unde corporis est iste vero, aperiam quia beatae minima nesciunt libero. Ut quo, voluptas odit exercitationem illo officia a consequatur beatae minima nesciunt libero. Ut quo, voluptas odit exercitationem illo officia a consequatur beatae minima nesciunt libero. Ut quo, voluptas odit exercitationem illo officia a consequatur.</p>
+          </div>
+
           <div className="blog-wrapper">
             {blogs.map((blog) => (
               <BlogCard key={blog} blog={blog} />
